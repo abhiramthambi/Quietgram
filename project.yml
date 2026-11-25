@@ -1,0 +1,24 @@
+name: Quietgram
+options:
+  bundleIdPrefix: com.personal
+  deploymentTarget:
+    iOS: "16.0"
+targets:
+  Quietgram:
+    type: application
+    platform: iOS
+    sources: [Quietgram]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.personal.quietgram
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Quietgram
+        INFOPLIST_KEY_NSCameraUsageDescription: "Take photos to post"
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: "Record video to post"
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        TARGETED_DEVICE_FAMILY: "1"
+        SWIFT_VERSION: "5.0"
+        CODE_SIGNING_ALLOWED: NO
